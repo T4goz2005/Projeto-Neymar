@@ -2,7 +2,7 @@ body {
   font-family: "Poppins";
   font-weight: bold;
   font-size: 100%;
-  color: #fff;
+  color: #ffffff;
 }
 
 img {
@@ -14,34 +14,27 @@ html {
 }
 
 /*Fundo-Animado*/
-.fundo-video {
-  background-color: #d5011d;
+
+.fundo-video .background-img{
   position: absolute;
+  background-image: url(/src/img/fundo-neymar2.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: -1;
-  width: 100vw;
-  height: 100vh;
   overflow: hidden;
+  width: 130vw;
+  max-height: 100vh;
 }
 
-.fundo-video .video {
-  height: 100vh;
-}
 
-.fundo-video::after {
+.fundo-video::background-img {
   content: "";
   height: 100vh;
   width: 100vw;
   position: absolute;
   top: 0;
   left: 0;
-  background: rgb(0, 0, 0);
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 8%,
-    rgba(0, 0, 0, 0.7786666666666666) 50%,
-    rgba(0, 0, 0, 1) 88%
-  );
 }
 
 /*Fundo-Animado*/
@@ -57,25 +50,25 @@ html {
   margin: 0 auto;
 }
 
-/* @media (max-width: 624px) {
-    .cabecalho {
-      justify-content: center;
-    }
-  
-    .cabecalho .logo {
-      margin-bottom: 30px;
-    }
-  
-    .cabecalho .menu .item a {
-      font-size: calc(0.6em + 1vw);
-    }
-  } */
+@media (max-width: 624px) {
+  .cabecalho {
+    justify-content: center;
+  }
+
+  .cabecalho .logo {
+    margin-bottom: 30px;
+  }
+
+  .cabecalho .menu .item a {
+    font-size: calc(0.6em + 1vw);
+  }
+}
 
 .cabecalho .logo {
   align-items: center;
-  width: 80px;
+  width: 70px;
   margin: 20px;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .cabecalho .menu {
@@ -122,14 +115,16 @@ html {
 }
 
 .container .imagem-titulo {
-  max-width: 500px;
+  max-width: 900px;
+  margin-bottom: 70px
 }
 
 .container .descricao {
-  color: #a8adb7;
+  color: #e1e4ea;
   width: 85%;
   font-size: 18px;
   margin: 30px 0;
+  margin-bottom: 40px;
 }
 
 .container .btn-trailer {
@@ -146,6 +141,10 @@ html {
 
 .container .btn-trailer:hover {
   transform: scale(1.1);
+}
+
+.container .imagem-mario{
+  max-width: 800px;
 }
 
 /*Conteudo Principal*/
